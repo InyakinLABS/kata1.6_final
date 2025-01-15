@@ -1,0 +1,124 @@
+@import '../vars';
+.left_menu{
+    display: none;
+    left: 0;
+    top: 0px;
+    max-height: 100%;
+    max-width: 320px;
+    background-color: white;
+    font-family: 'TT Lakes'; 
+    .left_menu-header-logo{
+        cursor:pointer;
+    }
+    @media(min-width:1440px){
+        display:block;
+        min-height: 100vh;
+        min-width: 320px;
+    }
+}
+
+.menu_active{
+    display: block;
+    position:absolute;
+    top: 0px;
+    bottom: 100;
+    height: auto;
+    z-index: 2999 !important;
+}
+
+.header-buttons-burger{
+    @media(min-width:1336px){
+        display: none;
+
+    }
+}
+.left_menu-header-container{
+    display: flex;
+    width: 320px;
+    height: 100%;
+    padding:24px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-first-group{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+.main-block__list{
+    margin-top: 18px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-family: 'TT Lakes';
+    overflow-x: hidden;
+}
+
+.main-block__list-item{
+    margin-bottom: 24px;
+    padding: 6px 30px;
+    display: flex;
+    color: #1B1C21; 
+}
+
+.main-block__list-link{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0; 
+    padding: 0;
+    font-weight: 600;
+    color: #1B1C21;
+}
+
+.main-block__list-link:focus,.main-block__list-link:hover{
+    color: #7E7E82;
+
+}
+.main-block__list-item:hover,.main-block__list-item::before{
+    background: no-repeat left url('/assets/images/icons_svg/highlight.svg');
+}
+.menu-footer__wrapper{
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    @media(min-width: 768px){
+        margin-top: 32px;
+    }
+}
+.menu-footer__contacts{
+    display: flex;
+    flex-direction: column;
+}
+.menu-footer__contacts-buttons{
+    display: flex;
+    gap: 16px;
+}
+.menu-footer__contacts-email{
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+.custom-radio{
+    position:absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.menu-footer__languages{
+    margin-top: 40px;
+    display: flex;
+    gap: 7px;
+}
+
+.custom-radio:checked + .custom-radio__label{
+    color: #7E7E82;
+}
+.menu-footer__contacts-number{
+    font-weight: 900;
+}

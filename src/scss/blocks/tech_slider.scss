@@ -1,0 +1,67 @@
+@import '../vars';
+
+.tech_swiper{
+    height: 208px;
+    @media(min-width:768px){
+        height: auto;
+        width: 100%;
+    }
+}
+.tech_swiper-wrapper{
+    margin-right: 16px;
+    height: 160px;
+    @media(min-width: 768px){
+        display: grid;
+        grid-template-columns: repeat(3,1fr );
+        overflow-x: visible;
+        gap: 16px;
+        min-width: 100px;
+
+    }
+    @media(min-width: 1120px){
+        display: grid;
+        grid-template-columns: repeat(4,1fr );
+        column-gap: 32px;
+        row-gap: 16px;
+    }
+}
+
+.tech-header{
+    margin-bottom: 16px;
+}
+.tech-slide{
+    width: 240px;
+    height: 160px;
+    display: flex;
+    padding: 16px;
+    margin: 0;
+    img{
+        margin-top: auto;
+    }
+    margin-right: 0;
+    @media(min-width: 768px){
+        width: 224px;
+    }
+
+}
+.tech_slide-text{
+margin-bottom: auto;
+text-decoration: none;
+color: $text-color;
+font-style: 'TT Lakes';
+font-size: 16px;
+font-weight: 600;
+}
+
+.tech_swiper-pagination{
+    margin-top: 16px;
+    @media(min-width:768px) {
+        position: absolute;
+        display: none;
+        
+    }
+}
+
+.tech_expanded{
+    min-height: 360px;
+}

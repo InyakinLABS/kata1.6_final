@@ -1,0 +1,43 @@
+@import '../vars';
+
+.footer{
+    position: relative;
+    margin-top:24px;
+    bottom:0;
+    font-family: 'TT Lakes';
+    width: 100%;
+
+}
+.footer-wrapper{
+display: flex;
+flex-direction: column;
+row-gap: 16px;
+justify-content: center;
+align-items: center;
+padding: 4px;
+font-size: 14px;
+line-height: 16px;
+opacity: 72%;
+@media(min-width:768px){    
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+}
+}
+
+.footer-trademark{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+.licence-text{
+    display: flex;
+    text-align: right;
+    align-items: center;
+    width: 213px;
+}
+.conf-text{
+
+}
